@@ -1,9 +1,5 @@
 # site-poetry-firebase
  
- <strong>Passo a passo da instalação firebase resumido :</strong>
-* Criar o projeto do firebase 
-* instalar no vs code o npm firebase :
-```code
-npm install firebase
-```
-*
+## Documentação Passo Passo Firebase 
+
+[Documentação - Firebase : https://firebase.google.com/docs/web/setup?authuser=0&hl=pt](https://firebase.google.com/docs/web/setup?authuser=0&hl=pt)
