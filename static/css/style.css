@@ -1,0 +1,289 @@
+
+
+
+:root {
+
+    --cor-orange-soda:#F06449;
+    --cor-cor-tea-green:#dcf2b0;
+    --cor-barn-red:#720e07;
+    --cor-black-bean:#45050c;
+    --cor-burgundy:#8a0d21;
+
+}
+body{
+    background-color: var(--cor-orange-soda);
+}
+
+header{
+    position: relative;
+    bottom: 700px;
+    border-radius: 50%;
+    width: 100%;
+    height: 1000px;
+    background-color:var(--cor-barn-red);
+    border: 2px solid white;
+}
+main{
+    position: relative;
+    bottom: 700px;
+    display: grid;
+    grid-area:"left center right ";
+    grid-template-columns: 25% 50% 25%;
+    margin: auto;
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+
+}
+.content-left{
+  display: grid;
+  grid-area: "left";
+  width: 100%;
+
+  border-radius: 10px;
+}
+
+.container-perfil{
+    position: relative;
+    bottom: 100px;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px solid white;
+    /*left right espalhamento e tonalidade*/
+    width: 200px;
+    height: 200px;
+    background-color: chocolate;
+    background-image: url(../imagem/leandro.jpg);
+    background-position: center;
+    background-size: 100%;
+    animation: 3s cor infinite;
+
+}
+
+
+.container-author{
+    position: relative;
+    bottom: 80px;
+    width:250px;
+    height: 480px;
+    background-color:var(--cor-burgundy);
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: auto;
+    overflow: auto;
+    animation: 1s frontDois linear;
+
+}
+.author{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 70px;
+    border-radius: 20px;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-bottom: 0px;
+    background-color: var(--cor-cor-tea-green);
+    border: 0.2px solid black; 
+    cursor: pointer;
+}
+.author:hover{
+    background-color: rgb(244, 245, 255);
+    color: rgb(0, 0, 0);
+}
+h3{
+    text-align: center;
+}
+.content-center{
+    display: grid;
+    grid-area: "center";
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container-poetry{
+
+    position: relative;
+    bottom: 160px;
+    width: 550px;
+    margin: auto;
+    height: 650px;
+    background-color: var(--cor-burgundy);
+    border: 2px solid white;
+    border-radius: 10px;
+    overflow: auto;    /* sera usado quando for necessario o uso aparecera a barra de rolagem */
+    animation: 2s front linear;
+   
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.poem-text{
+    padding-top:10px;
+    padding-left:10px ;
+    padding-right:10px ;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    border-radius: 10px;
+    height: auto;
+    background-color: var(--cor-cor-tea-green);
+    border: 0.2px solid black;
+
+}
+.poem-text:last-child{
+    margin-bottom: 30px;
+}
+p{
+
+   padding-left: 25px;
+}
+.content-right{
+    display: grid;
+    grid-area: "right";
+    width: 100%;
+
+    border-radius: 10px;
+}
+.container-outher{
+    position: relative;
+    bottom: 170px;
+    width: 250px;
+    height: 500px;
+    background-color:var(--cor-burgundy);
+    border: 2px solid white;
+    margin: auto;
+    border-radius: 10px;
+    animation: 2.2s esquerda linear;
+
+}
+.div-table{
+    margin: 30px auto;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    width: 100%;
+    background-color: white;
+   
+    text-align: center;
+    border: 1px solid black;
+}thead{
+    background-color: white;
+    text-align: center;
+}
+
+tr{
+
+}
+.td-title{
+    background-color: var(--cor-barn-red);
+    color: white;
+}
+td{
+    color: black;
+    background-color: beige;
+    border: 1px solid black;
+  
+}
+
+.td-result{
+    
+    background-color: #F06449;
+    color: white;
+}
+
+
+
+@keyframes cor {
+
+    0%{
+        box-shadow: 0px 0px 0px 0px  black;
+    }
+
+    25%{
+        box-shadow:0px 0px 3px 0px  rgb(50, 45, 45);
+    }
+
+    50%{
+        box-shadow:0px 0px 10px 1px  rgb(18, 4, 172);
+    }
+   
+    75%{
+        box-shadow:0px 0px 3px 0px  rgb(50, 45, 45);
+    }
+
+    100%{
+        box-shadow:0px 0px 0px 0px  black;
+    }
+}
+
+@keyframes front {
+    0%{
+        position: relative;
+        bottom: 0px;
+    }
+    50%{
+        position: relative;
+        bottom: 160px;
+    }
+
+    100%{
+        position: relative;
+        bottom: 160px;
+    }
+    
+}
+
+@keyframes frontDois {
+    0%{
+        position: relative;
+        bottom: 0px;
+    }
+    50%{
+        position: relative;
+        bottom: 80px;
+    }
+
+    100%{
+        position: relative;
+        bottom: 80px;
+    }
+    
+}
+
+@keyframes esquerda {
+
+    0%{
+        position: relative;
+        left:  160px;
+    }
+    50%{
+        position: relative;
+        left: 80px;
+    }
+
+    100%{
+        position: relative;
+        left: 0px;
+    }
+    
+}
+
+
+

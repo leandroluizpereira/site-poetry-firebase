@@ -1,0 +1,189 @@
+@media (max-width:500px) {
+
+    
+:root {
+
+    --cor-orange-soda:#F06449;
+    --cor-cor-tea-green:#dcf2b0;
+    --cor-barn-red:#720e07;
+    --cor-black-bean:#45050c;
+    --cor-burgundy:#8a0d21;
+
+}
+body{
+    background-color: var(--cor-orange-soda);
+}
+
+header{
+
+    border-radius: 50%;
+    width: 100%;
+    height: 800px;
+    background-color:var(--cor-barn-red);
+    border: 0.2px solid black;
+}
+main{
+    display: grid;
+    grid-area:"left center right ";
+    grid-template-columns: 1fr;
+    margin: auto;
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+
+}
+.content-left{
+  display: grid;
+  grid-area: "left";
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container-perfil{
+ 
+    margin: auto;
+    border-radius: 50%;
+    border: 0.2px solid black;
+    /*left right espalhamento e tonalidade*/
+    width: 200px;
+    height: 200px;
+    background-color: chocolate;
+    background-image: url(../imagem/leandro.jpg);
+    background-position: center;
+    background-size: 100%;
+    animation: 3s cor infinite;
+    
+
+}
+
+
+.container-author{
+
+    width:250px;
+    height: 500px;
+    background-color:var(--cor-burgundy);
+    border: 0.2px solid black;
+    border-radius: 10px;
+    margin: auto;
+    overflow: auto;
+
+}
+.author{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 70px;
+    border-radius: 20px;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-bottom: 0px;
+    background-color: var(--cor-cor-tea-green);
+    border: 0.2px solid black; 
+    cursor: pointer;
+}
+.author:hover{
+    background-color: rgb(244, 245, 255);
+    color: rgb(0, 0, 0);
+}
+h3{
+    text-align: center;
+}
+.content-center{
+    display: grid;
+    grid-area: "center";
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container-poetry{
+  
+    width: 500px;
+    margin-left:auto ;
+    margin-right:auto ;
+    margin-top: auto;
+    margin-bottom: 30px;
+    height: auto;
+    background-color: var(--cor-burgundy);
+    border: 0.2px solid black;
+    border-radius: 10px;
+    overflow: auto;    /* sera usado quando for necessario o uso aparecera a barra de rolagem */
+   
+    
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.poem-text{
+    padding-top:10px;
+    padding-left:10px ;
+    padding-right:10px ;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    border-radius: 10px;
+    height: auto;
+    background-color: var(--cor-cor-tea-green);
+    border: 0.2px solid black;
+
+}
+p{
+
+   padding-left: 25px;
+}
+.content-right{
+    display: grid;
+    grid-area: "right";
+    width: 100%;
+    border-radius: 10px;
+}
+.container-outher{
+ 
+    width: 250px;
+    height: 500px;
+    background-color:var(--cor-burgundy);
+    border: 0.2px solid black;
+    margin: auto;
+    border-radius: 10px;
+
+}
+
+@keyframes cor {
+
+    0%{
+        box-shadow: 0px 0px 0px 0px  black;
+    }
+
+    25%{
+        box-shadow:0px 0px 3px 0px  rgb(50, 45, 45);
+    }
+
+    50%{
+        box-shadow:0px 0px 10px 1px  rgb(18, 4, 172);
+    }
+   
+    75%{
+        box-shadow:0px 0px 3px 0px  rgb(50, 45, 45);
+    }
+
+    100%{
+        box-shadow:0px 0px 0px 0px  black;
+    }
+}
+
+
+
+
+    
+}
